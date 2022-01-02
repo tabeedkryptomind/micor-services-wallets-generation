@@ -1,0 +1,1 @@
+# micor-services-wallets-generation
