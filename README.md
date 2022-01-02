@@ -9,7 +9,7 @@ docker build -t python .
 docker run -it -p 5000:5000 -v ${PWD}:/wallets python bash
 
 
-# To run the application
+# To run the application  in terminal
 python3 main.py
 ```
 
@@ -19,6 +19,6 @@ cd go-wallets-eth
 docker build --target dev . -t go
 # This will mount the volume into container and open a terminal
 docker run -it -p 8080:8080 -v ${PWD}:/wallets go sh
-# To run the application 
+# To run the application in terminal
 go run main.go
 ```
