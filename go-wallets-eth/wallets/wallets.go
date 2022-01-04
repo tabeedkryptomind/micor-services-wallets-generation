@@ -27,7 +27,7 @@ func GetAddress() (models.Wallet, error) {
 	addr_index := strconv.Itoa(count)
 	hdPath := "m/44'/60'/0'/0/" + addr_index
 	fmt.Println(hdPath)
-	pri, pub, addr, err := getKeys(wallet, hdPath)
+	addr, pub, pri, err := getKeys(wallet, hdPath)
 	if err != nil {
 		return models.Wallet{}, err
 	}
